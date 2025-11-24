@@ -93,7 +93,7 @@ Three datasets from different experimental conditions:
 - **mixin_test57**: 400 frames, 14 aggregation centers  
 - **mixin_test64**: 20 frames, 11 aggregation centers
 
-**Data Source:** Allyson Sgro Lab, Janelia HHMI (confidential)
+**Data Source:** Allyson Sgro Lab
 
 ### Ground Truth Aggregation Centers
 
