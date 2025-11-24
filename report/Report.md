@@ -683,11 +683,11 @@ drive.mount('/content/drive')
 
 ## 8. References
 
-1. [Sgro, A.E., Schwab, D.J., Noorbakhsh, J., Mestler, T., Mehta, P., & Gregor, T. (2015). "From intracellular signaling to population oscillations: bridging size- and time-scales in collective behavior." *Molecular Systems Biology*, 11(1), 779.]:https://pmc.ncbi.nlm.nih.gov/articles/PMC4332153/
+1. [Sgro, A.E., Schwab, D.J., Noorbakhsh, J., Mestler, T., Mehta, P., & Gregor, T. (2015). "From intracellular signaling to population oscillations: bridging size- and time-scales in collective behavior." *Molecular Systems Biology*, 11(1), 779.](https://pmc.ncbi.nlm.nih.gov/articles/PMC4332153/)
 
-2. [Dataset courtesy of Allyson Sgro Lab(confidential).]:https://sgrolab.com/
+2. [Dataset courtesy of Allyson Sgro Lab(confidential).](https://sgrolab.com/ )
 
-3. [Magazine: "Slime Mold Grows Network Just Like Tokyo Rail System" - illustrating collective intelligence.]:https://www.wired.com/2010/01/slime-mold-grows-network-just-like-tokyo-rail-system/Wired
+3. [Wired Magazine: "Slime Mold Grows Network Just Like Tokyo Rail System" - illustrating collective intelligence.](https://www.wired.com/2010/01/slime-mold-grows-network-just-like-tokyo-rail-system/Wired )
 
 ---
 
