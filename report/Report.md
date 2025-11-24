@@ -55,15 +55,16 @@ Understanding early predictors of aggregation can:
 **Ground Truth Aggregation Centers:**
 
 **Test44 - 23 centers:**
-![test44 centers](Output/mixin_test44_centers.png)
+![test44 centers](../Output/mixin_test44_centers.png)
 
 **Test57 - 14 centers:**
-![test57 centers](Output/mixin_test57_centers.png)
+![test57 centers](../Output/mixin_test57_centers.png)
 
 **Test64 - 11 centers:**
-![test64 centers](Output/mixin_test64_centers.png)
+![test64 centers](../Output/mixin_test64_centers.png)
 
 **Preprocessing Pipeline:**
+
 1. Z-axis max projection to create 2D representation
 2. Min-max normalization to [0, 1]
 3. Empty frame removal
@@ -354,13 +355,13 @@ To demonstrate "how soon can we be right?", we visualized predictions from early
 **Prediction from K=8 Early Frames (8% of observation time):**
 
 **mixin_test44 Dataset:**
-![test44 predictions](Output/mixin_test44_predictions.png)
+![test44 predictions](../Output/mixin_test44_predictions.png)
 
 **mixin_test57 Dataset:**
-![test57 predictions](Output/mixin_test57_predictions.png)
+![test57 predictions](../Output/mixin_test57_predictions.png)
 
 **mixin_test64 Dataset:**
-![test64 predictions](Output/mixin_test64_predictions.png)
+![test64 predictions](../Output/mixin_test64_predictions.png)
 
 ```
 [Visualization shows:]
@@ -430,23 +431,23 @@ To understand **how Dicty decides where to aggregate**, we implemented comprehen
 **Temporal Progression of Flow Patterns:**
 
 **Test44 - Early stage (t=30):**
-![Flow test44 t30](Output/flow_mixin_test44_t30.png)
+![Flow test44 t30](../Output/flow_mixin_test44_t30.png)
 
 **Test44 - Mid stage (t=50):**
-![Flow test44 t50](Output/flow_mixin_test44_t50.png)
+![Flow test44 t50](../Output/flow_mixin_test44_t50.png)
 
 **Test44 - Late stage (t=70):**
-![Flow test44 t70](Output/flow_mixin_test44_t70.png)
+![Flow test44 t70](../Output/flow_mixin_test44_t70.png)
 
 **Test57 - Extended temporal dynamics:**
-![Flow test57 t120](Output/flow_mixin_test57_t120.png)
-![Flow test57 t200](Output/flow_mixin_test57_t200.png)
-![Flow test57 t280](Output/flow_mixin_test57_t280.png)
+![Flow test57 t120](../Output/flow_mixin_test57_t120.png)
+![Flow test57 t200](../Output/flow_mixin_test57_t200.png)
+![Flow test57 t280](../Output/flow_mixin_test57_t280.png)
 
 **Test64 - Rapid aggregation:**
-![Flow test64 t6](Output/flow_mixin_test64_t6.png)
-![Flow test64 t10](Output/flow_mixin_test64_t10.png)
-![Flow test64 t14](Output/flow_mixin_test64_t14.png)
+![Flow test64 t6](../Output/flow_mixin_test64_t6.png)
+![Flow test64 t10](../Output/flow_mixin_test64_t10.png)
+![Flow test64 t14](../Output/flow_mixin_test64_t14.png)
 
 **Key Observations:**
 
@@ -471,7 +472,7 @@ To understand **how Dicty decides where to aggregate**, we implemented comprehen
 
 **Progressive Prediction Evolution Video:**
 
-![Prediction Evolution](Output/slime_mold_prediction_evolution.gif)
+![Prediction Evolution](../Output/slime_mold_prediction_evolution.gif)
 
 **Prediction Video Analysis:**
 - Generated frame-by-frame prediction videos showing temporal evolution of model decisions
@@ -682,11 +683,11 @@ drive.mount('/content/drive')
 
 ## 8. References
 
-1. [Sgro, A.E., Schwab, D.J., Noorbakhsh, J., Mestler, T., Mehta, P., & Gregor, T. (2015). "From intracellular signaling to population oscillations: bridging size- and time-scales in collective behavior." *Molecular Systems Biology*, 11(1), 779.][https://pmc.ncbi.nlm.nih.gov/articles/PMC4332153/]
+1. [Sgro, A.E., Schwab, D.J., Noorbakhsh, J., Mestler, T., Mehta, P., & Gregor, T. (2015). "From intracellular signaling to population oscillations: bridging size- and time-scales in collective behavior." *Molecular Systems Biology*, 11(1), 779.]:https://pmc.ncbi.nlm.nih.gov/articles/PMC4332153/
 
-2. [Dataset courtesy of Allyson Sgro Lab(confidential).][https://sgrolab.com/]
+2. [Dataset courtesy of Allyson Sgro Lab(confidential).]:https://sgrolab.com/
 
-3. [Magazine: "Slime Mold Grows Network Just Like Tokyo Rail System" - illustrating collective intelligence.][https://www.wired.com/2010/01/slime-mold-grows-network-just-like-tokyo-rail-system/Wired]
+3. [Magazine: "Slime Mold Grows Network Just Like Tokyo Rail System" - illustrating collective intelligence.]:https://www.wired.com/2010/01/slime-mold-grows-network-just-like-tokyo-rail-system/Wired
 
 ---
 
@@ -695,6 +696,7 @@ drive.mount('/content/drive')
 ### ConvLSTM Architecture
 
 **Encoder:**
+
 ```
 Conv2d(1 → 32, k=3, p=1) → ReLU → MaxPool2d(2)
 Conv2d(32 → 64, k=3, p=1) → ReLU → MaxPool2d(2)
@@ -719,39 +721,7 @@ Output: (B, 1, H, W) probability map
 
 ---
 
-## Appendix B: Computational Resources and Training Details
-
-**Hardware:**
-- Platform: Google Colab with GPU acceleration (T4 GPU)
-- Memory: Sufficient for batch size 16 across all models
-- Storage: Google Drive for data and output storage
-
-**Training Performance:**
-- **3D CNN:** ~30 epochs in total training time
-  - Parameters: 92,769
-  - Best validation loss: 0.007557
-  
-- **Flow-Based:** ~30 epochs in total training time
-  - Parameters: 282,113
-  - Best validation loss: 0.007764
-  
-- **ConvLSTM:** ~30 epochs in total training time
-  - Parameters: 337,089
-  - Best validation loss: 0.008322
-
-**Dataset Statistics:**
-- Total samples: 499 (from 3 datasets)
-- Training samples: 349 (70%)
-- Validation samples: 74 (15%)
-- Test samples: 76 (15%)
-- Input dimensions: (K=8, 1, 256, 256)
-- Output dimensions: (1, 256, 256)
-
-**Inference Time:** Real-time capable (<100ms per sample on GPU)
-
----
-
-## Appendix C: Dataset Details
+## Appendix B: Dataset Details
 
 ### mixin_test44
 - Total frames: 100
