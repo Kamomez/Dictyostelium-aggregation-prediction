@@ -57,8 +57,9 @@ This project implements deep learning models to predict aggregation centers in D
 5. **Interpretable Motion Cues**
    - Optical flow analysis reveals cell movement patterns
    - Spiral wave detection consistent with cAMP signaling
-   - Progressive prediction videos show model decision-making
+   - Progressive prediction videos for all three datasets show different aggregation dynamics
    - Feature visualizations demonstrate hierarchical learning
+   - Multi-center tracking across 11-23 simultaneous aggregation sites
 
 #### Optical Flow Analysis
 
@@ -83,8 +84,12 @@ This project implements deep learning models to predict aggregation centers in D
 
 #### Progressive Prediction Evolution
 
-**Video showing temporal decision-making process:**
+**Videos showing temporal decision-making process across all datasets:**
 ![Prediction Evolution](Output/slime_mold_prediction_evolution.gif)
+
+![Prediction Evolution Test57](Output/slime_mold_prediction_mixin_test57.gif)
+
+![Prediction Evolution Test64](Output/slime_mold_prediction_mixin_test64.gif)
 
 ## Dataset
 
