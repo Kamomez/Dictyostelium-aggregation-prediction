@@ -85,9 +85,16 @@ This project implements deep learning models to predict aggregation centers in D
 #### Progressive Prediction Evolution
 
 **Videos showing temporal decision-making process across all datasets:**
+
+**Test44 (100 frames, 23 centers):**
+
 ![Prediction Evolution](Output/slime_mold_prediction_evolution.gif)
 
+**Test57 (400 frames, 14 centers):**
+
 ![Prediction Evolution Test57](Output/slime_mold_prediction_mixin_test57.gif)
+
+**Test64 (20 frames, 11 centers):**
 
 ![Prediction Evolution Test64](Output/slime_mold_prediction_mixin_test64.gif)
 
