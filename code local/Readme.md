@@ -1,4 +1,5 @@
 ## Module Structure
+```
 dicty_config.py       # Configuration and argument parsing
 dicty_utils.py        # Data loading and processing utilities
 dicty_dataset.py      # PyTorch dataset classes
@@ -6,6 +7,7 @@ dicty_models.py       # Neural network model definitions
 dicty_train.py        # Training functions
 dicty_evaluate.py     # Evaluation functions
 dicty_main.py         # Main pipeline orchestrator
+```
 
 ### Step 1: Verify Configuration
 dicty_config.py
